@@ -1,0 +1,348 @@
+html {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  text-align: center;
+  height: 230px;
+  font-family: Arial;
+ background-image: url("/Users/mayadyakova/Desktop/W6_Project Maya Peirce/_images/mp4.mov");
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+
+#logo {
+  width: 160px;
+  height: auto;
+  float: left;
+}
+img {
+  padding-top: 0;
+  padding-bottom: 5%;
+}
+#title {
+  font-size: 70px;
+font-style: italic;
+    font-family: "Yanone Kaffeesatz";
+    src: url("../fonts/Sevilliana-Regular.ttf");
+ color: rgb(250, 238, 8);
+  padding-top: 6%;
+}
+header h1 {
+  color: rgb(7, 57, 14);
+  font-weight: 550;
+  font-size: 3.5em;
+  margin: 0 0 1em 0;
+  font-style: italic;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  margin-right: 10%;
+}
+h2 {
+  color: #1e4425;
+  font-style: italic;
+}
+h1 {
+  text-align: center;
+  color: #1e4425;
+  font-style: italic;
+}
+h3 {
+  color: black;
+  font-size: 19px;
+}
+h4 {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: #d9c6ba;
+  padding-left: 40%;
+}
+h5 {
+  background-color: #075619a3;
+  width: 35%;
+  height: auto;
+  margin-top: 15px;
+  margin-left: 300px;
+  padding: 50px 50px 50px 50px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+h5 a {
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+  font-size: 25px;
+  color: rgb(249, 213, 10);
+  border-radius: 20%;
+  text-decoration: none;
+}
+p {
+  margin: 10px;
+  font-weight: bolder;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+body {
+  background-color: #2d5a2264;
+}
+.nav-menu {
+  border: 2px solid #d9c6ba;
+  background-color: #8c0327cf;
+  font-weight: bolder;
+  font-size: 20px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 9px;
+  text-decoration: none;
+  color: #a69485;
+}
+
+div {
+  padding: -1px;
+}
+#wrapper {
+  max-width: 1100px;
+
+  margin: 0 auto;
+  background-color: rgba(255, 217, 0, 0.653);
+  border-radius: 12px;
+}
+li {
+  margin: 5px;
+  padding: 5px;
+  font-size: x-large;
+}
+.link {
+  border: 2px solid #d9c6ba;
+  background-color: rgb(255, 123, 0);
+  color: #1e4425;
+  position: relative;
+  left: 200px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bolder;
+  font-style: 20px;
+}
+#wrapper2 {
+  max-width: 1095px;
+  margin: 0 auto;
+  background-color: #1e4425;
+  border: 3px solid #d9c6ba;
+  height: 40px;
+  border-radius: 9px;
+ text-align: center;
+
+}
+#wrapper3 {
+  max-width: 1150px;
+  margin: 0 auto;
+  background-color: rgba(255, 217, 0, 0.653);
+  border: 3px solid #d9c6ba;
+
+  border-radius: 9px;
+}
+body#b2 {
+  font-family: Arial;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+div#results {
+  background-color: #8c032763;
+  height: auto;
+  width: 500px;
+  border: 2px solid #d9c6ba;
+  padding: 10px;
+  margin-left: 20px;
+  -moz-box-shadow: 10px 10px 5px black;
+  -webkit-box-shadow: 10px 10px 5px black;
+  box-shadow: 10px 10px 5px black;
+  border-radius: 7px;
+  color: #d9c6ba;
+}
+div#more {
+  background-color: #9b465d63;
+  height: auto;
+  width: 500px;
+  border: 2px solid #d9c6ba;
+  padding: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
+  -moz-box-shadow: 10px 10px 5px black;
+  -webkit-box-shadow: 10px 10px 5px black;
+  box-shadow: 10px 10px 5px black;
+  border-radius: 7px;
+  color: black;
+}
+#form1 {
+  padding: 10px;
+  width: 1000px;
+  border-style: solid;
+  border-color: #d9c6ba;
+  border-radius: 15px;
+  -moz-box-shadow: 10px 10px 5px black;
+  -webkit-box-shadow: 10px 10px 5px black;
+  box-shadow: 10px 10px 5px black;
+  background-color: rgba(255, 217, 0, 0.653);
+  margin: 20px;
+  margin-left: 5%;
+}
+
+.container-1 {
+  margin: 5px;
+  padding: 15px;
+  background-color: #2a2d267c;
+  border: 1px solid gold;
+}
+
+a:hover {
+  color: #2e140e;
+}
+#dashboard {
+  width: 80px;
+  background-color: #d9c6ba;
+  padding: 20px 20px 0 20px;
+  position: absolute;
+  left: -92px;
+  z-index: 100;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+#dashboard img {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid rgb(0, 0, 0);
+  opacity: 0.5;
+}
+#dashboard img:hover {
+  opacity: 1;
+}
+input {
+  margin: 5px;
+  padding: 5px;
+}
+
+#linkbtn {
+  background-color: #1e4425;
+  border-radius: 10px;
+  color: #d9c6ba;
+  font-size: 16px;
+  font-weight: bolder;
+  border: 2px solid #d9c6ba;
+}
+#link1btn {
+  background-color: #1e4425;
+  border-radius: 10px;
+  color: #d9c6ba;
+  font-size: 16px;
+  font-weight: bolder;
+  border: 2px solid #d9c6ba;
+}
+
+
+
+#link2btn {
+  background-color: #1e4425;
+  border-radius: 10px;
+  color: #d9c6ba;
+  font-size: 16px;
+  font-weight: bolder;
+  border: 2px solid #d9c6ba;
+}
+#link3btn {
+  background-color: #1e4425;
+  border-radius: 10px;
+  color: #d9c6ba;
+  font-size: 16px;
+  font-weight: bolder;
+  border: 2px solid #d9c6ba;
+}
+#link4btn {
+  background-color: #1e4425;
+  border-radius: 10px;
+  color: #d9c6ba;
+  font-size: 16px;
+  font-weight: bolder;
+  border: 2px solid #d9c6ba;
+}
+#link5btn {
+  background-color: #1e4425;
+  border-radius: 10px;
+  color: #d9c6ba;
+  font-size: 16px;
+  font-weight: bolder;
+  border: 2px solid #d9c6ba;
+}
+#link6btn {
+  background-color: #1e4425;
+  border-radius: 10px;
+  color: #d9c6ba;
+  font-size: 16px;
+  font-weight: bolder;
+  border: 2px solid #d9c6ba;
+}
+
+#listbtn {
+  background-color: #1e4425;
+  border-radius: 10px;
+  color: #d9c6ba;
+  font-size: 16px;
+  font-weight: bolder;
+  border: 2px solid #d9c6ba;
+}
+#area1 {
+  border-radius: 10px;
+}
+#area2 {
+  border-radius: 10px;
+}
+#area3 {
+  border-radius: 10px;
+}
+#area4 {
+  border-radius: 10px;
+}
+#area5 {
+  border-radius: 10px;
+}
+#area6 {
+  border-radius: 10px;
+}
+
+#privacy {
+  text-align: center;
+}
+#roses{
+  text-align: center;
+}
+#spring{
+  text-align: center;
+}
+#carnations{
+  text-align: center;
+}
+#cascade{
+  text-align: center;
+}
+#triangles{
+  text-align: center;
+}
+#biedermier{
+  text-align: center;
+}
+#talk{
+  text-align: center;
+}
+#arangements{
+  align-items: center;
+  padding-left: 32px;
+  padding-top: 32px;
+}
+
