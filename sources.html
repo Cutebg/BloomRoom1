@@ -1,0 +1,99 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+
+<title>Maya's website</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<link href="smartmenus/sm-core-css.css" rel="stylesheet">
+<script src="js/jquery.colorbox-min.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+<link href="smartmenus/sm-mymenu.css" rel="stylesheet">
+<script src="smartmenus/jquery.smartmenus.min.js"></script>
+<script>
+	$(document).ready(function() {
+	  $('.sm').smartmenus({
+    showFunction: function($ul, complete) {
+	  $ul.slideDown(250, complete);
+	},
+	hideFunction: function($ul, complete) {
+	  $ul.slideUp(250, complete);
+	}
+    }); //end smartmenus
+	document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('a[href^="http"]');
+
+  links.forEach(link => {
+    if (link.hostname !== location.hostname) {
+      link.target = '_self';
+    }
+  });
+});
+}); //ends the document ready function
+</script>
+</head>
+<body>
+	
+
+    <div id="wrapper">
+		<header>
+			<img src="_images/logo.png" alt="logo" id="logo">
+			  <h1 id="title">Bloom Room</h1>
+			</header>
+			  <div>
+				<ul class="sm sm-mymenu">
+		
+					
+				  <li><a href="index.html">Welcome</a></li>
+				  <li><a href="home.html">Home</a></li>
+				  <li><a href="about.html">About  </a>
+					<ul>
+					  <li><a href="products.html">Our Flower arengements</a></li>
+					  <li><a href="privacy.html">Privacy Policy</a></li>
+					</ul>
+				  </li>
+				  <li><a href="form.html">Contact </a></li>
+				  <li><a href="sources.html">Image Sources</a></li>
+				  <li><a href="talk.html">Let's talk about flowers</a>
+					<ul>
+					  <li><a href="arangements.html">Types of flower arangements</a>
+						<ul>
+						  <li><a href="triangles.html">Triangles</a></li>
+						  <li><a href="cascade.html">Cascade</a></li>
+						  <li><a href="biedermier.html">Biedermeier</a></li>
+						</ul>
+					  </li>
+					  <li><a href="gallery.html">Image Gallery </a>
+
+						  </li>
+						</ul>
+					  </li>
+					</ul>
+				  </li>
+				</ul>
+			</div>
+	<div class="ref">
+	<h1>References </h1><br>
+	<div class="content">
+	<h5 class ="links">
+		<a target="_blank" class='iframe' href="https://www.pexels.com/search/Flower%20arangements/">Pixels</a>
+		<br>
+		<a class='iframe' href="https://stock.adobe.com/search?k=flower+shop&search_type=recentsearch/">Adobe Stock</a>
+		<br>
+		<a class='iframe' href="https://flowermag.com/category/flowers/flower-arrangements/spring-flower-arrangements/">Flower</a>
+	</h5>
+</div>
+		
+	
+	</div>
+	</div>
+</body>
+<div id="wrapper2">
+    <footer>
+		<p> Created by Maya Peirce &copy;2024/Bloom Room/All Rights reserved</p>
+	  </footer>
+  </div>
+</div>
+</html>

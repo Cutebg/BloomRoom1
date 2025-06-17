@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Maya's Gallery</title>
+<link href="css/style.css" rel="stylesheet">
+<style>
+#gallery {
+	float: left;
+	width: 90px;
+	margin-right: 60px;
+	margin-left: 40px;
+}
+#gallery img {
+	display: inline-block;
+	margin: 0 0 10px 0;
+  border-radius: 20%;
+	opacity: 0.5;
+}
+#photo {
+	margin-left: 200px;
+	position: relative;
+ 
+}
+#photo img {
+	position: absolute;
+	width: 900px;
+	height: 650px;
+}
+#gallery img:hover {
+opacity: 1.0;
+}
+</style>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<link href="smartmenus/sm-core-css.css" rel="stylesheet">
+<link href="smartmenus/sm-mymenu.css" rel="stylesheet">
+<script src="smartmenus/jquery.smartmenus.min.js"></script>
+<script>
+$(document).ready(function() {
+		
+$('#gallery img').each(function(i) {
+	var imgFile = $(this).attr('src');
+	var preloadImage = new Image();
+	var imgExt = /(\.\w{3,4}$)/;
+	preloadImage.src = imgFile.replace(imgExt,'_h$1');
+		
+	$(this).hover(
+        function() {
+            $(this).attr('opacity',1);
+        },
+        function () {
+        var currentSource=$(this).attr('sopacity');
+        $(this).attr('opacity',0.5);
+    }); // end hover
+}); // end each
+
+	
+// The click function below allows user to switch the image in the gallery
+$('#gallery a').click(function(evt) {
+  evt.preventDefault();
+  var imgPath = $(this).attr('href');
+  var oldImage = $('#photo img');
+  var newImage = $('<img src="' + imgPath + '">');
+  newImage.hide(); // hides the new image so the fade in effect works
+  $('#photo').prepend(newImage);
+  newImage.fadeIn(1000);
+  oldImage.fadeOut(1000,function() {
+    $(this).remove();
+  }); // end fadeout
+}); // end click	
+$('#gallery a:first').click();
+$('.sm').smartmenus({
+    showFunction: function($ul, complete) {
+	  $ul.slideDown(250, complete);
+	},
+	hideFunction: function($ul, complete) {
+	  $ul.slideUp(250, complete);
+	}
+    }); //end smartmenus	
+}); // end ready
+</script>
+  </head>
+  <body>
+	
+
+    <div id="wrapper">
+		<header>
+			<img src="_images/logo.png" alt="logo" id="logo">
+			  <h1 id="title">Bloom Room</h1>
+			</header>
+			  <div>
+				<ul class="sm sm-mymenu">
+		
+					
+				  <li><a href="index.html">Welcome</a></li>
+				  <li><a href="home.html">Home</a></li>
+				  <li><a href="about.html">About  </a>
+					<ul>
+					  <li><a href="products.html">Our Flower arengements</a></li>
+					  <li><a href="privacy.html">Privacy Policy</a></li>
+					</ul>
+				  </li>
+				  <li><a href="form.html">Contact </a></li>
+				  <li><a href="sources.html">Image Sources</a></li>
+				  <li><a href="talk.html">Let's talk about flowers</a>
+					<ul>
+					  <li><a href="arangements.html">Types of flower arangements</a>
+						<ul>
+						  <li><a href="triangles.html">Triangles</a></li>
+						  <li><a href="cascade.html">Cascade</a></li>
+						  <li><a href="biedermier.html">Biedermeier</a></li>
+						</ul>
+					  </li>
+					  <li><a href="gallery.html">Image Gallery </a>
+						  </li>
+						</ul>
+					  </li>
+					</ul>
+				  </li>
+				</ul>
+			</div>
+      </header>
+
+
+
+            <div class="content">
+              <div class="main">
+          
+                <h1>Our flower arangenets</h1>
+                <div id="gallery">
+                  <a href="_images/IMG_8132.jpg"><img src="thumbnail/IMG_8132.jpg"width="85" height="85" alt=""></a>
+                    <a href="_images/IMG_6002.jpg" ><img src="thumbnail/IMG_6002.jpg" width="85" height="85" alt=""></a>         
+                    <a href="_images/IMG_5995.jpg"><img src="thumbnail/IMG_5995.jpg" width="85" height="85" alt=""></a>        
+                    <a href="_images/IMG_8134.jpg"><img src="thumbnail/IMG_8134.jpg" width="85" height="85" alt=""></a>         
+                    <a href="_images/pic7.jpg"><img src="thumbnail/pic7.jpg" width="85" height="85" alt=""></a>         
+                    <a href="_images/img20.jpg"><img src="thumbnail/img20.jpg"  width="85" height="85" alt=""></a>
+                    
+                  </div>
+            
+            
+                          
+                </div>
+                <div id="photo"></div>
+              </div>
+            </div>
+            
+              <footer>
+                <p></p>
+              </footer>
+            </div>
+          </div>
+          </body>
+		  
+		</html>

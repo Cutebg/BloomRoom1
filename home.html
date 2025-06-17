@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+<link rel="stylesheet" href="css/style.css">
+<title>Maya's website</title>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<link href="smartmenus/sm-core-css.css" rel="stylesheet">
+<link href="smartmenus/sm-mymenu.css" rel="stylesheet">
+<script src="smartmenus/jquery.smartmenus.min.js"></script>
+<script src="jquery_validate/jquery.validate.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+	 $('#mylist').hide();
+	  $('#area1').hide();
+	  $('#area2').hide();
+	  $('#area3').hide();
+    $('#area4').hide();
+	  $('#area5').hide();
+	  $('#area6').hide();
+
+	  $('#linkbtn').click(function() {
+		  $('#area1').toggle('slow');
+	  }); //ends the first link btn function
+	  $('#link2btn').click(function() {
+		  $('#area2').toggle('slow');
+	  }); //ends the second link btn function
+	  $('#link3btn').click(function() {
+		  $('#area3').toggle('slow');
+	  }); //ends the third link btn function
+    $('#link4btn').click(function() {
+		  $('#area4').toggle('slow');
+	  }); //ends the third link btn function
+    $('#link5btn').click(function() {
+		  $('#area5').toggle('slow');
+	  }); //ends the third link btn function
+    $('#link6btn').click(function() {
+		  $('#area6').toggle('slow');
+	  }); //ends the third link btn function
+	  $('#listbtn').click(function() {
+		  $('#mylist').fadeIn(1000);
+	  }); //end the list btn click event
+	  $('#area1').hover(function() {
+
+
+
+	  $(this).css('background-color','#1e4425');
+		},
+		function() {
+      $(this).css('background-color','#2d5a2264');
+		}); //ends the mouse over event
+	  $('#area1').hover(function() {
+		  $(this).css('background-color','#1e4425');
+		},
+		function() {
+		$(this).css('background-color','#2d5a2264');
+		}); //ends the mouse over event
+	  $('#area2').hover(function() {
+		  $(this).css('background-color','#1e4425');
+		},
+		function() {
+		$(this).css('background-color','#2d5a2264');
+		}); //ends the mouse over event
+	  $('#area3').hover(function() {
+		  $(this).css('background-color','#1e4425');
+		},
+		function() {
+      $(this).css('background-color','#2d5a2264');
+		}); //ends the mouse over event
+	  $('#area4').hover(function() {
+		  $(this).css('background-color','#1e4425');
+		},
+		function() { 
+      $(this).css('background-color','#2d5a2264');
+		}); //ends the mouse over event
+	  $('#area5').hover(function() {
+		  $(this).css('background-color','#1e4425');
+		},
+		function() {
+      $(this).css('background-color','#2d5a2264');
+		}); //ends the mouse over event
+	  $('#area6').hover(function() {
+		  $(this).css('background-color','#1e4425');
+		},
+		function() {
+		$(this).css('background-color','#2d5a2264');
+		}); //ends the mouse over event
+		$('.sm').smartmenus({
+    showFunction: function($ul, complete) {
+	  $ul.slideDown(250, complete);
+	},
+	hideFunction: function($ul, complete) {
+	  $ul.slideUp(250, complete);
+	}
+    }); //end smartmenus
+	  $('#dashboard').hover(
+    function() {
+	  $(this).stop().animate(
+	    {
+		  left: '0',
+		  backgroundColor: '#1e4425'
+		 
+		},
+		500,
+		'easeInSine'
+	  ); //end animate
+	},
+	function() {
+	  $(this).stop().animate(
+	    {
+		  left: '-92px',
+		  backgroundColor: '#1e4425'
+		},
+		1500,
+		'easeOutBounce'
+	  ); //end animate
+	}
+  ); //end hover
+	}); //ends the document ready function
+</script>
+</head>
+
+<body>
+
+
+
+    <div id="wrapper">
+		<header>
+		  <img src="_images/logo.png" alt="logo" id="logo">
+			<h1 id="title">Bloom Room</h1>
+		  </header>
+			<div>
+			  <ul class="sm sm-mymenu">
+     
+				
+				<li><a href="index.html">Welcome</a></li>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="about.html">About  </a>
+				  <ul>
+					<li><a href="products.html">Our Flower arengements</a></li>
+					<li><a href="privacy.html">Privacy Policy</a></li>
+				  </ul>
+				</li>
+				<li><a href="form.html">Contact </a></li>
+				<li><a href="sources.html">Image Sources</a></li>
+				<li><a href="talk.html">Let's talk about flowers</a>
+				  <ul>
+					<li><a href="arangements.html">Types of flower arangements</a>
+					  <ul>
+						<li><a href="triangles.html">Triangles</a></li>
+						<li><a href="cascade.html">Cascade</a></li>
+						<li><a href="biedermier.html">Biedermeier</a></li>
+					  </ul>
+					</li>
+					<li><a href="gallery.html">Image Gallery </a>
+						</li>
+					  </ul>
+					</li>
+				  </ul>
+				</li>
+			  </ul>
+		  </div>
+	  
+  
+  
+	<div>
+		<h1> Please take a moment to review the linked pages provided below. </h1>
+	</div>
+	
+	<input type="button" value="Click Me" id="listbtn">
+	<div id="mylist">
+		<h3>What you will see on the website? </h3>
+		<ul>
+			<li>About</li>
+			<li>Facts</li>
+			<li>Project Description</li>
+			<li>Project Motivation</li>
+      <li>Project Theme</li>
+			<li>Contact</li>
+		</ul>
+		
+	</div>
+	
+	<h2>About</h2>
+	<input type="button" value="Click Me" id="linkbtn"></input>
+	
+	<div class="container-1" id="area1">
+		<p> Welcome to Bloom Room where we deliver your emotions. </p>
+		<a href="abutmore.html" class="link">Learn More</a>
+	</div>
+	
+	<h2>Facts</h2>
+	<input type="button" value="Click Me" id="link2btn"></input>
+	<div class="container-1" id="area2">
+		<p>Check out the interactive  details about Bloom Room website.</p>
+     <a href="facts.html" class="link">Learn More</a>
+	</div>
+
+	<h2> Project Description</h2>
+	<input type="button" value="Click Me" id="link3btn"></input>
+	<div class="container-1" id="area3">
+		<p>Learn more about the project description</p>
+		<a href="description.html" class="link">Learn More</a>
+	</div>
+
+  <h2> Project Motivation</h2>
+	<input type="button" value="Click Me" id="link4btn"></input>
+	<div class="container-1" id="area4">
+		<p>Learn more about my motivation for creating this website.</p>
+		<a href="motivation.html" class="link">Learn More</a>
+	</div>
+	
+  <h2> Project Theme</h2>
+	<input type="button" value="Click Me" id="link5btn"></input>
+	<div class="container-1" id="area5">
+		<p>Learn more about the project Theme</p>
+		<a href="theme.html" class="link">Learn More</a>
+	</div>
+
+  <h2> Contact</h2>
+	<input type="button" value="Click Me" id="link6btn"></input>
+	<div class="container-1" id="area6">
+		<p>This section will explore the contact form attached to the website</p>
+		<a href="contactme.html" class="link">Learn More</a>
+	</div>
+
+</body>
+<div id="wrapper2">
+    <footer>
+      <p> Created by Maya Peirce &copy;2024/Bloom Room/All Rights reserved</p>
+    </footer>
+  </div>
+</div>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+<link rel="stylesheet" href="css/style.css">
+<title>Maya's website</title>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<link href="smartmenus/sm-core-css.css" rel="stylesheet">
+<link href="smartmenus/sm-mymenu.css" rel="stylesheet">
+<script src="smartmenus/jquery.smartmenus.min.js"></script>
+<script>
+	$(document).ready(function() {
+		$('.sm').smartmenus({
+			showFunction: function($ul, complete) {
+				$ul.slideDown(250, complete);
+			},
+			hideFunction: function($ul, complete) {
+				$ul.slideUp(250, complete);
+			}
+		}); //end smartmenus
+	}); //ends the document ready function
+</script>
+  </head>
+  <body>
+  
+    <div id="wrapper">
+      <header>
+        <img src="_images/logo.png" alt="logo" id="logo">
+        <h1 id="title">Bloom Room</h1>
+        </header>
+        <div>
+          <ul class="sm sm-mymenu">
+           
+          <li><a href="index.html">Welcome</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About  </a>
+            <ul>
+            <li><a href="products.html">Our Flower arengements</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+          </li>
+          <li><a href="form.html">Contact </a></li>
+          <li><a href="sources.html">Image Sources</a></li>
+          <li><a href="talk.html">Let's talk about flowers</a>
+            <ul>
+            <li><a href="arangements.html">Types of flower arangements</a>
+              <ul>
+              <li><a href="triangles.html">Triangles</a></li>
+              <li><a href="cascade.html">Cascade</a></li>
+              <li><a href="biedermier.html">Biedermeier</a></li>
+              </ul>
+            </li>
+            <li><a href="gallery.html">Image Gallery </a>
+              </li>
+              </ul>
+            </li>
+            </ul>
+          </li>
+          </ul>
+        </div>
+      
+      <h1>We will deliver your emotions!</h1>
+    </div>
+   
+   
+        <div>
+      <img src="_images/2025.jpg" alt="flowers" width="100%" height="380"/></div>
+      <div class="container-1" id="area1">
+      <h4>Our story</h4>
+      <p>
+         <br>Bloom Room has developed a unique visual language unparalleled in the
+        floral industry. Our partnerships with various producers across the
+        country enable us to offer a variety and quantity of flowers that cannot
+        be found anywhere else in the Tampa Bay area. Our distinctive style has
+        garnered local and national recognition. We constantly expand our
+        creative range, and our seasonal blooming flowers always evoke a sense
+        of being freshly picked from the garden. Thanks to our horticulturists
+        and landscape architects, Bloom Room is like a magical garden, capable 
+        of transforming any space into a naturalistic fairytale with their keen
+        sense of color and combination. We understand that flowers are not just 
+        gifts; they require special handling as they are sensitive to time and
+        place. Our mission is to ensure unparalleled quality and style that 
+        touches the heart of each client and leaves a lasting impression. 
+      </p><br> 
+      </div> 
+      <div class="div-content">
+        <h1>Welcome to  Bloom Room </h1>
+        <h3>Free delivery of flowers and bouquets in Tampa Bay.
+          Here you can find information about different types of flowers, features and tips for their proper storage 
+             and growing.
+        Thank you for choosing Bloom Room!.</h3>
+      </div>
+    </body>
+    <div id="wrapper2">
+        <footer>
+          <p> Created by Maya Peirce &copy;2024/Bloom Room/All Rights reserved</p>
+        </footer>
+      </div>
+    </div>
+    </html>
+  
+

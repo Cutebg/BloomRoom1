@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+<link rel="stylesheet" href="css/style.css">
+<title>Maya's website</title>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<link href="smartmenus/sm-core-css.css" rel="stylesheet">
+<link href="smartmenus/sm-mymenu.css" rel="stylesheet">
+<script src="smartmenus/jquery.smartmenus.min.js"></script>
+<script src="jquery_validate/jquery.validate.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+	 $('#mylist').hide();
+	  $('#area1').hide();
+	  $('#area2').hide();
+	  $('#area3').hide();
+	  $('#linkbtn').click(function() {
+		  $('#area1').toggle('slow');
+	  }); //ends the first link btn function
+	  $('#link2btn').click(function() {
+		  $('#area2').toggle('slow');
+	  }); //ends the second link btn function
+	  $('#link3btn').click(function() {
+		  $('#area3').toggle('slow');
+	  }); //ends the third link btn function
+	  $('#listbtn').click(function() {
+		  $('#mylist').fadeIn(1000);
+	  }); //end the list btn click event
+	  $('#area1').hover(function() {
+		  $(this).css('background-color','#1e4425');
+		},
+		function() {
+		$(this).css('background-color','#2d5a2264');
+		}); //ends the mouse over event
+	  $('#area2').hover(function() {
+		  $(this).css('background-color','#1e4425');
+		},
+		function() {
+		$(this).css('background-color','#2d5a2264');
+		}); //ends the mouse over event
+	  $('#area3').hover(function() {
+		  $(this).css('background-color','#1e4425');
+		},
+		function() {
+		$(this).css('background-color','#2d5a2264');
+		}); //ends the mouse over event
+		$('.sm').smartmenus({
+    showFunction: function($ul, complete) {
+	  $ul.slideDown(250, complete);
+	},
+	hideFunction: function($ul, complete) {
+	  $ul.slideUp(250, complete);
+	}
+    }); //end smartmenus
+	  $('#dashboard').hover(
+    function() {
+	  $(this).stop().animate(
+	    {
+		  left: '0',
+		  backgroundColor: '#1e4425'
+		 
+		},
+		500,
+		'easeInSine'
+	  ); //end animate
+	},
+	function() {
+	  $(this).stop().animate(
+	    {
+		  left: '-92px',
+		  backgroundColor: '#1e4425'
+		},
+		1500,
+		'easeOutBounce'
+	  ); //end animate
+	}
+  ); //end hover
+	}); //ends the document ready function
+</script>
+</head>
+
+<body>
+	<div id="dashboard">
+		<img src="thumbnail/rose.jpeg" width="70" height="70" alt="rose">
+		<img src="thumbnail/ceanations.jpeg" width="70" height="70" alt="carnations">
+	  <img src="thumbnail/Flower bascet.jpeg" width="70" height="70" alt="flower bascket">
+
+	  <img src="thumbnail/IMG_8140 .jpg" width="70" height="70" alt="">
+	 <img src="thumbnail/IMG_8142.jpg" width="70" height="70" alt="">
+	  <img src="thumbnail/img18.jpg" width="70" height="70" alt="">
+
+	  <img src="thumbnail/img24.jpg" width="70" height="70" alt="rose">
+	 <img src="thumbnail/pic5.jpg" width="70" height="70" alt="">
+	 <img src="thumbnail/pic13.jpg" width="70" height="70" alt="">
+	 
+	</div>
+
+
+    <div id="wrapper">
+			<header>
+			<img src="_images/logo.png" alt="logo" id="logo">
+			  <h1 id="title">Bloom Room</h1>
+			</header>
+			  <div>
+				<ul class="sm sm-mymenu">
+			
+			    <li><a href="index.html">Welcome</a></li>
+				  <li><a href="home.html">Home</a></li>
+				  <li><a href="about.html">About  </a>
+					<ul>
+					  <li><a href="products.html">Our Flower arengements</a></li>
+					  <li><a href="privacy.html">Privacy Policy</a></li>
+					</ul>
+				  </li>
+				  <li><a href="form.html">Contact </a></li>
+				  <li><a href="sources.html">Image Sources</a></li>
+				  <li><a href="talk.html">Let's talk about flowers</a>
+					<ul>
+					  <li><a href="arangements.html">Types of flower arangements</a>
+						<ul>
+						  <li><a href="triangles.html">Triangles</a></li>
+						  <li><a href="cascade.html">Cascade</a></li>
+						  <li><a href="biedermier.html">Biedermeier</a></li>
+						</ul>
+					  </li>
+					  <li><a href="gallery.html">Image Gallery </a>
+						  </li>
+						</ul>
+					  </li>
+					</ul>
+				  </li>
+				</ul>
+			</div>
+	  
+  
+  
+	<div>
+	  <h1>Welcome to my flower website. This website is dedicated to talking
+		 about beauty and fragrance.</h1>
+	  <h1>Bloom Room has developed a unique visual language unparalleled in 
+		the floral industry. Our partnerships with various producers across
+		the country enable us to offer a variety and quantity of flowers that
+		 cannot be found anywhere else. </h1>
+	</div>
+	<div>
+		<h1> Flowers are not just
+			gifts; they require special handling as they are sensitive to 
+			time and place. </h1>
+	</div>
+	<h2>Learn more about the flower arangements we can offer</h2>
+	<input type="button" value="Click Me" id="listbtn">
+	<div id="mylist">
+		<h3>Our current products.</h3>
+		<ul>
+			<li>Roses</li>
+			<li>Spring arangements</li>
+			<li>Carnations</li>
+			<li>Wild flowers</li>
+			<li>Bascet of flowers</li>
+		</ul>
+		<h3>The world of flowers is limitless. Learn more about it in my website.</h3>
+	</div>
+	
+	<h2>Learn  about Roses</h2>
+	<input type="button" value="Click Me" id="linkbtn"></input>
+	
+	<div class="container-1" id="area1">
+		<p>Roses encompass a wide variety of flowers, including many ancient types such as
+			 Galicia, Damask, Alba, and Centifolia (including the captivating Moss roses)
+			  that date back to before the mid-19th century.</p>
+		<p>'Charles de Mills' (1790) and 'Souvenir de la Malmaison'
+			(1843) are examples of these old roses.</p>
+		<p>Click the link below to learn more about the various roses</p>
+		<a href="roses.html" class="link">Learn More</a>
+	</div>
+	
+	<h2>Learn about spring flowers.</h2>
+	<input type="button" value="Click Me" id="link2btn"></input>
+	<div class="container-1" id="area2">
+		<p>Below are some fun facts about some popular spring flowers:</p>
+		<p>The early bloomers symbolize rebirth, renewal, and new beginnings. 
+			They are also a symbol of Easter in many cultures.</p>
+		<p>Click the link below to learn more about spring flowers.</p>
+		<a href="spring.html" class="link">Learn More</a>
+	</div>
+	<h2>Learn about Carnations</h2>
+	<input type="button" value="Click Me" id="link3btn"></input>
+	<div class="container-1" id="area3">
+		<p>Carnations are the national flowers of Monaco, Slovenia, and Spain.
+			 The red carnation is the state flower of Ohio.</p>
+		<p>Bogota, Colombia, is known as the world's leading producer of carnations, 
+			making it the capital of carnations</p>
+		<p>Click the link below to learn more about the carnations.</p>
+		<a href="carnations.html" class="link">Learn More</a>
+	</div>
+	</div>
+</body>
+<div id="wrapper2">
+    <footer>
+      <p> Created by Maya Peirce &copy;2024/Bloom Room/All Rights reserved</p>
+    </footer>
+  </div>
+</div>
+</html>

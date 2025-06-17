@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+<link rel="stylesheet" href="css/style.css">
+<title>Maya's website</title>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<link href="smartmenus/sm-core-css.css" rel="stylesheet">
+<link href="smartmenus/sm-mymenu.css" rel="stylesheet">
+<script src="smartmenus/jquery.smartmenus.min.js"></script>
+<script src="jquery_validate/jquery.validate.min.js"></script>
+<script type="text/javascript">
+
+$(document).ready(function() {
+		$('#form1').validate( {
+		  rules: {
+	        email: {
+	          required: true,
+		      email: true
+	        },
+			confirm_email: {
+			  equalTo: '#email'
+			}
+		  }, // ends rules
+		  messages: {
+		    email: {
+			  required: "Please supply your e-mail.",
+			  email: "This is not a valid e-mail ."
+			},
+			confirm_email: {
+			  equalTo: 'The two emails do not match.'
+			}
+		  }, //ends messages
+		  errorPlacement: function(error, element) {
+			if (element.is(":radio") || element.is(":checkbox")) {
+				error.appendTo( element.parent());
+			} else {
+				error.insertAfter(element);
+			}
+	} // end errorPlacement
+		});// ends validate() for the form
+		$('.sm').smartmenus({
+			showFunction: function($ul, complete) {
+			  $ul.slideDown(250, complete);
+			},
+			hideFunction: function($ul, complete) {
+			  $ul.slideUp(250, complete);
+			}
+		}); //end smartmenus
+	}); //ends ready function that loads the document
+</script>
+</head>
+
+<body id="b2">
+	<div id="wrapper3">
+		<header>
+			<img src="_images/logo.png" alt="logo" id="logo">
+			  <h1 id="title">Bloom Room</h1>
+			</header>
+			  <div>
+				<ul class="sm sm-mymenu">
+		
+					
+				  <li><a href="index.html">Welcome</a></li>
+				  <li><a href="home.html">Home</a></li>
+				  <li><a href="about.html">About  </a>
+					<ul>
+					  <li><a href="products.html">Our Flower arengements</a></li>
+					  <li><a href="privacy.html">Privacy Policy</a></li>
+					</ul>
+				  </li>
+				  <li><a href="form.html">Contact </a></li>
+				  <li><a href="sources.html">Image Sources</a></li>
+				  <li><a href="talk.html">Let's talk about flowers</a>
+					<ul>
+					  <li><a href="arangements.html">Types of flower arangements</a>
+						<ul>
+						  <li><a href="triangles.html">Triangles</a></li>
+						  <li><a href="cascade.html">Cascade</a></li>
+						  <li><a href="biedermier.html">Biedermeier</a></li>
+						</ul>
+					  </li>
+					  <li><a href="gallery.html">Image Gallery </a>
+						  </li>
+						</ul>
+					  </li>
+					</ul>
+				  </li>
+				</ul>
+			</div>
+	<form name="form1" id="form1" action="thankyou.html" method="post">
+		<div>
+			Please enter your first name, last name, and your email.<br><br>
+			<label>First Name: &nbsp;
+				<input type="text" name="firstName" id="firstName" class="required" title="Please type in your first name.">
+			</label>
+			<br>
+			<label>Last Name: &nbsp;
+				<input type="text" name="lastName" id="lastName" class="required" title="Please type in your last name.">
+			</label>
+			<br>
+			<label>Email: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+				<input type="text" name="email" id="email">
+			</label>
+			<br> <!--Adds a line break for inputs-->
+			<label>Confirm Email: &nbsp;
+				<input type="text" name="confirm_email" id="confirm_email">
+			</label>
+			
+		</div>
+		<div>
+			<label>Please  select what your favorite flower arrangement is.</label><br>
+			<input name="rose" type="checkbox" id="switch" value="rose" class="required" title="Please check at least 1 one flower arengement.">
+			<label for="rose">Roses</label>
+			<input name="springbouquet" type="checkbox" id="springbouquet" value="springbouquet">
+			<label for="springbouquet">Spring bouqet</label>
+			<input name="carnations" type="checkbox" id="carnations" value="pcarnations">
+			<label for="carnations">Carnations</label>
+			<input name=" twildflowers" type="checkbox" id="wildflowers" value="wildflowers">
+			<label for="pc">Wild flowers</label>
+			<input name="none" type="checkbox" id="none" value="none">
+			<label for="none">None</label>
+			
+</div>
+<div>
+
+	<label>Would you like email notifications?</label>
+	<input  type="radio" name="choice" id="yes" value="yes" class="required" title="Please select an option">
+			  <label for="yes">Yes</label>
+			  <input type="radio" name="choice" id="no" value="no">
+			  <label for="definitely">No</label>
+  </div>
+  <div>
+	<label>Comments:</label><br>
+	<textarea></textarea>
+  </div>
+  <div>
+	  <input type="submit" value="Submit"> &nbsp; &nbsp; <input type="reset" value="Clear Form">
+  </div>
+  </form>
+  <!--<div id="results"></div>
+  <div id="more"></div>-->
+</div>
+</body>
+<div id="wrapper2">
+    <footer>
+		<p> Created by Maya Peirce &copy;2024/Bloom Room/All Rights reserved</p>
+	  </footer>
+  </div>
+</div>
+</html>
